@@ -16,13 +16,13 @@ export const MainHeader = () => {
 			</div>
 
 			<ul className={style.mainHeader__navList}>
-				<Link to="/" className={style.mainHeader__navItem}>
+				<Link to="/webinars" className={style.mainHeader__navItem}>
 					Webinars
 				</Link>
-				<Link to="/" className={style.mainHeader__navItem}>
+				<Link to="/mentorias" className={style.mainHeader__navItem}>
 					Mentorías
 				</Link>
-				<Link to="/" className={style.mainHeader__navItem}>
+				<Link to="/cursos" className={style.mainHeader__navItem}>
 					Cursos
 				</Link>
 				<Link to="/" className={style.mainHeader__navItem}>
