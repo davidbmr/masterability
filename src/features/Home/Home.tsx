@@ -23,18 +23,21 @@ export const Home = () => {
 						title="Webinars"
 						description="Charlas virtuales grabadas"
 						textButton="Conecta"
+						pathButton="webinars"
 					/>
 					<ServiceCard
 						img="/public/assets/home/service-2.png"
 						title="Mentorias"
 						description="Sesiones virtuales sincrónicas"
 						textButton="Conversa"
+						pathButton="mentorias"
 					/>
 					<ServiceCard
 						img="/public/assets/home/service-3.png"
 						title="Cursos"
 						description="Cursos virtuales prácticos con enfoque vocacional"
 						textButton="Experimenta"
+						pathButton="cursos"
 					/>
 				</div>
 			</section>
