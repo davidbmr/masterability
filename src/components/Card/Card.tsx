@@ -7,20 +7,18 @@ interface Props {
 	pathButton?: string;
 }
 
-export const Card = ({ title, description, professional}: Props) => {
-  return (
-    <div>
-        <div>
-
-        </div>
-        <div>
-            <div>
-
-            </div>
-            <h3>{title}</h3>
-            <h3>{professional}</h3>
-            <p>{description}</p>
-        </div>
-    </div>
-  )
-}
+export const Card = ({ title, description, professional }: Props) => {
+	return (
+		<div className={style.card__container}>
+			<div className={style.card__img__container}>
+				<img className={style.card__img} src="/public/assets/img-default.png" alt="img" />
+			</div>
+			<div className={style.card__info__container}>
+				<div></div>
+				<h3>{title}</h3>
+				<h3>{professional}</h3>
+				<p>{description}</p>
+			</div>
+		</div>
+	);
+};

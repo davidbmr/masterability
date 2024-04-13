@@ -1,12 +1,10 @@
 import style from "./Home.module.css";
-import { MainHeader } from "@/components/MainHeader/MainHeader";
 import { ServiceCard } from "./components/ServiceCard/ServiceCard";
-import { MainFooter } from "@/components/MainFooter/MainFooter";
+import { AppContainer } from "@/components/AppContainer/AppContainer";
 
 export const Home = () => {
 	return (
-		<>
-			<MainHeader />
+		<AppContainer>
 			<section className={style.section__homeBanner}>
 				<img
 					className={style.homeBanner__img}
@@ -38,8 +36,6 @@ export const Home = () => {
 					/>
 				</div>
 			</section>
-
-			<MainFooter />
-		</>
+		</AppContainer>
 	);
 };

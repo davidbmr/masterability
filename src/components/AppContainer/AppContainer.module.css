@@ -1,0 +1,11 @@
+.appContainer__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	min-height: 100vh;
+}
+
+.appContainer__children {
+	min-height: calc(100vh - 150px - 80px);
+}
