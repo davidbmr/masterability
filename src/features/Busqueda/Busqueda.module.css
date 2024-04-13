@@ -1,0 +1,33 @@
+.section__busqueda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.section__title {
+  color: var(--color-morado);
+  font-size: 30px;
+  font-weight: 800;
+}
+.input__box {
+  width: 500px;
+  background-color: #f3f3f3;
+  display: flex;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.input__item {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.section__card__container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
