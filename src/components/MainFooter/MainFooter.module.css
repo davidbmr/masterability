@@ -3,9 +3,22 @@
 	height: 150px;
 	background-color: var(--color-naranja);
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
 	padding: 0 50px;
+}
+
+.social__container{
+ display: flex;
+ flex-direction: column;
+ gap:8px;
+}
+.social__container p{
+	color: white;
+}
+.social__content{
+	display: flex;
+	gap: 10px;
 }
 
 .logo__container {
