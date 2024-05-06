@@ -43,9 +43,9 @@ export const Home = () => {
 				</div>
 			</section>
 
-			<section className={style.section__services}>
+			<section className={style.section__promotion}>
 				<h2 className={style.section__title}>APROVECHA LAS PROMOCIONES QUE TENEMOS PARA TI</h2>
-				<div className={style.section__card__container}>
+				<div className={style.section__promotion__container}>
 					<PromotionCard
 					title="Mentoría Individual"
 					description="Incluye 3 mentorías mensuales de 1h"

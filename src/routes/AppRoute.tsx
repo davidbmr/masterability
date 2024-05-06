@@ -4,6 +4,8 @@ import { Busqueda } from "@/features/Busqueda/Busqueda";
 import { Webinars } from "@/features/Webinars/Webinars";
 import { Mentorias } from "@/features/Mentorias/Mentorias";
 import { Cursos } from "@/features/Cursos/Cursos";
+import { Mentoria } from "@/features/Mentoria/Mentoria";
+import { Webinar } from "@/features/Webinar/Webinar";
 
 export const AppRoute = () => {
 	return (
@@ -14,6 +16,9 @@ export const AppRoute = () => {
 				<Route path="/webinars" element={<Webinars />} />
 				<Route path="/mentorias" element={<Mentorias />} />
 				<Route path="/cursos" element={<Cursos />} />
+
+				<Route path="/mentoria" element={<Mentoria />} />
+				<Route path="/webinar" element={<Webinar />} />
 			</Routes>
 		</BrowserRouter>
 	);

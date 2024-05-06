@@ -61,9 +61,10 @@ export const Mentorias = () => {
 				<br />
 				<Carousel responsive={responsive}>
 					<Card
-						title="Título"
+						title="Comunicaciones y Audiovisuales"
 						description="Información de que trata exactamente"
-						professional="Janeth Peves"
+						professional="Fátima Carbajal"
+						pathButton="/mentoria"
 					/>
 					<Card
 						title="Título"

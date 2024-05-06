@@ -4,6 +4,7 @@
 
 	display: grid;
 	grid-template-rows: 190px 200px;
+	cursor: pointer;
 }
 
 .card__img__container {

@@ -61,9 +61,10 @@ export const Webinars = () => {
 				<br />
 				<Carousel responsive={responsive}>
 					<Card
-						title="Título"
+						title="Administración y Negocios"
 						description="Información de que trata exactamente"
-						professional="Janeth Peves"
+						professional="Karen Soria"
+						pathButton="/webinar"
 					/>
 					<Card
 						title="Título"
