@@ -116,7 +116,7 @@ export const CurseAll = () => {
  
    useEffect(() => {
      const allComplete = Object.values(module4).every((value) => value === true);
-     setCompleteModule3(allComplete);
+     setCompleteModule4(allComplete);
    }, [module4]);
    
 
