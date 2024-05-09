@@ -46,7 +46,7 @@
     border-radius: 6px;
     border: 1px solid #6366f1;
     
-}         
+}
 
 .card__person{
     width: 560px;
@@ -77,4 +77,17 @@
 	height: 100%;
 	object-fit: cover;
 	border-radius: 20px;
+}
+
+.etapa1__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.items__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 30px;
 }

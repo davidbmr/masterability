@@ -42,3 +42,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
 	-moz-appearance: textfield;
 }
+
+.p-accordion-header-link	{
+	padding:  15px;
+}

@@ -6,6 +6,8 @@ import { Mentorias } from "@/features/Mentorias/Mentorias";
 import { Cursos } from "@/features/Cursos/Cursos";
 import { Mentoria } from "@/features/Mentoria/Mentoria";
 import { Webinar } from "@/features/Webinar/Webinar";
+import { Curso } from "@/features/Curso/Curso";
+import { CurseAll } from "@/features/CurseAll/CurseAll";
 
 export const AppRoute = () => {
 	return (
@@ -19,6 +21,8 @@ export const AppRoute = () => {
 
 				<Route path="/mentoria" element={<Mentoria />} />
 				<Route path="/webinar" element={<Webinar />} />
+				<Route path="/curso" element={<Curso />} />
+				<Route path="/curso-total" element={<CurseAll />} />
 			</Routes>
 		</BrowserRouter>
 	);

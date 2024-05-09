@@ -70,12 +70,16 @@ export const Mentoria = () => {
         <div className={style.webinar__description__container}>
           <p className={style.price__description}>S/50.00</p>
           <div className={style.card__description}>
-            <Button
+          <a
+              href="https://api.whatsapp.com/send?phone=920%20649%20979&text=%C2%A1Hola%21%2c%20quisiera%20hacer%20una%20consulta%20sobre%20una%20%20mentor%C3%ADa%20o%20curso&source=&data="
+              target="_blank" className={style.card__button}
+            >Agenda tu mentoría</a>
+            {/* <Button
               className={style.card__button}
               onClick={() => navigate("#")}
             >
               Agenda tu mentoría
-            </Button>
+            </Button> */}
             <p className={style.title__description}>Horarios disponibles</p>
             <p className={style.text__description}>Viernes 6:00 pm - 8:00 pm</p>
             <p className={style.title__description}>Duración</p>

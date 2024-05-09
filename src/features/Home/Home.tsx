@@ -17,8 +17,10 @@ export const Home = () => {
       </section>
 
       <section className={style.test__container}>
-		<h2 className={style.section__title}>¿NO SABES POR DONDE EMPEZAR?</h2>
-		<h3 className={style.section__title}>PRUEBA NUESTRO TEST DE AFINIDAD</h3>
+        <h2 className={style.section__title}>¿NO SABES POR DONDE EMPEZAR?</h2>
+        <h3 className={style.section__title}>
+          PRUEBA NUESTRO TEST DE AFINIDAD
+        </h3>
         <div style={{ width: "100%" }}>
           <div
             style={{
@@ -39,14 +41,13 @@ export const Home = () => {
                 left: 0,
                 width: "100%",
                 height: "80%",
-				
               }}
               src="https://view.genial.ly/661b0e0d285acf001403f7cb"
-           	//   type="text/html"
-            //   allowScriptAccess="always"
+              //   type="text/html"
+              //   allowScriptAccess="always"
               allowFullScreen={true}
               scrolling="yes"
-            //   allowNetworking="all"
+              //   allowNetworking="all"
             ></iframe>
           </div>
         </div>
@@ -95,8 +96,11 @@ export const Home = () => {
             title="Paquete de mentorías"
             description="Incluye 3 mentorías mensuales de 1h"
             price="Desde s/.150"
-            textButton="Comienza ya"
-            pathButton="webinars"
+            // textButton="Comienza ya"
+            // pathButton="webinars"
+            textW="Comienza ya"
+            activeWhats
+            activebutton={false}
           />
           <PromotionCard
             title="Experiencias Individuales"
@@ -109,8 +113,11 @@ export const Home = () => {
             title="Paquete Máster"
             description="Incluye el acceso a 3 experiencias de su preferencia"
             price="Desde s/.200.00"
-            textButton="Comienza ya"
-            pathButton="webinars"
+            // textButton="Comienza ya"
+            // pathButton="webinars"
+            textW="Comienza ya"
+            activeWhats
+            activebutton={false}
           />
         </div>
       </section>

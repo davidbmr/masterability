@@ -61,9 +61,10 @@ export const Cursos = () => {
 				<br />
 				<Carousel responsive={responsive}>
 					<Card
-						title="Título"
+						title="Diseño Industrial: Productos"
 						description="Información de que trata exactamente"
 						professional="Janeth Peves"
+						pathButton="/curso"
 					/>
 					<Card
 						title="Título"
