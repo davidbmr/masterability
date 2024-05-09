@@ -8,6 +8,7 @@ import { Button } from "primereact/button";
 import { useNavigate } from "react-router-dom";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import { CheckBoxField } from "@/components/CheckBoxField/CheckBoxField";
+import { useState } from "react";
 
 export const Curso = () => {
   const responsive = {
@@ -30,6 +31,21 @@ export const Curso = () => {
     },
   };
   const navigate = useNavigate();
+
+  const [completeModule1, setCompleteModule1] = useState(false);
+  const [module1, setModule1] = useState({
+    isExperiencia: false,
+    isBienvenido: false,
+    isConoce: false,
+    isEscucha: false,
+  });
+
+  const onChangeCheack = (e: any) => {
+    setModule1((prev: any) => ({
+      ...prev,
+      [e.target.name]: !e.target.value,
+    }));
+  };
 
   return (
     <AppContainer>
@@ -112,33 +128,33 @@ export const Curso = () => {
           </p>
           <br />
           <div className={style.etapa1__content}>
-            <div className={style.items__box}>
+          <div className={style.items__box}>
               <CheckBoxField
                 textLabel="Conoce la experiencia"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isExperiencia"
+                onChange={onChangeCheack}
+                value={module1.isExperiencia}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Bienvenido al trabajo"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isBienvenido"
+                onChange={onChangeCheack}
+                value={module1.isBienvenido}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Conoce el reto"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isConoce"
+                onChange={onChangeCheack}
+                value={module1.isConoce}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Escucha el caso"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isEscucha"
+                onChange={onChangeCheack}
+                value={module1.isEscucha}
                 reverseDirection
               />
             </div>
@@ -215,26 +231,8 @@ export const Curso = () => {
           </div>
         </AccordionTab>
         <AccordionTab header="Etapa 2: Analizar la información" disabled>
-          <p className="m-0">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci
-            velit, sed quia non numquam eius modi.
-          </p>
         </AccordionTab>
         <AccordionTab header="Etapa 3: Proponer soluciones" disabled>
-          <p className="m-0">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati cupiditate non
-            provident, similique sunt in culpa qui officia deserunt mollitia
-            animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-            est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-            eligendi optio cumque nihil impedit quo minus.
-          </p>
         </AccordionTab>
         <AccordionTab header="Etapa 4: Prototipar" disabled></AccordionTab>
         <AccordionTab
