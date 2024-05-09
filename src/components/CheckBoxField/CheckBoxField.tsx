@@ -1,4 +1,3 @@
-import React, { ChangeEvent } from "react";
 import style from "./CheckBoxField.module.css";
 import { Checkbox } from "primereact/checkbox";
 

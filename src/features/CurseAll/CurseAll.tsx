@@ -4,7 +4,7 @@ import { Card } from "@/components/Card/Card";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import { CheckBoxField } from "@/components/CheckBoxField/CheckBoxField";
 import { ProgressBar } from "primereact/progressbar";
@@ -29,7 +29,7 @@ export const CurseAll = () => {
       items: 1,
     },
   };
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
 
   const [porcentaje, setPorcentaje] = useState(0);
 
@@ -71,18 +71,87 @@ export const CurseAll = () => {
   };
 
   useEffect(() => {
-    const allComplete = Object.values(module1).every((value) => value === true);
+    const allComplete = Object.values(module2).every((value) => value === true);
     setCompleteModule2(allComplete);
   }, [module2]);
+
+
+   // Modulo 3
+   const [completeModule3, setCompleteModule3] = useState(false);
+   const [module3, setModule3] = useState({
+     isExperiencia: false,
+     isBienvenido: false,
+     isConoce: false,
+     isEscucha: false,
+   });
+ 
+   const onChangeCheack3 = (e: any) => {
+     setModule3((prev: any) => ({
+       ...prev,
+       [e.target.name]: !e.target.value,
+     }));
+   };
+ 
+   useEffect(() => {
+     const allComplete = Object.values(module3).every((value) => value === true);
+     setCompleteModule3(allComplete);
+   }, [module3]);
+
+
+   // Modulo 4
+   const [completeModule4, setCompleteModule4] = useState(false);
+   const [module4, setModule4] = useState({
+     isExperiencia: false,
+     isBienvenido: false,
+     isConoce: false,
+     isEscucha: false,
+   });
+ 
+   const onChangeCheack4 = (e: any) => {
+     setModule4((prev: any) => ({
+       ...prev,
+       [e.target.name]: !e.target.value,
+     }));
+   };
+ 
+   useEffect(() => {
+     const allComplete = Object.values(module4).every((value) => value === true);
+     setCompleteModule3(allComplete);
+   }, [module4]);
+   
+
+   // Modulo 5
+   const [completeModule5, setCompleteModule5] = useState(false);
+   const [module5, setModule5] = useState({
+     isExperiencia: false,
+     isBienvenido: false,
+     isConoce: false,
+     isEscucha: false,
+   });
+ 
+   const onChangeCheack5 = (e: any) => {
+     setModule5((prev: any) => ({
+       ...prev,
+       [e.target.name]: !e.target.value,
+     }));
+   };
+ 
+   useEffect(() => {
+     const allComplete = Object.values(module5).every((value) => value === true);
+     setCompleteModule5(allComplete);
+   }, [module5]);
 
   // Incrementando el contador
   useEffect(() => {
     let count = 0;
     if (completeModule1) count++;
     if (completeModule2) count++;
+    if (completeModule3) count++;
+    if (completeModule4) count++;
+    if (completeModule5) count++;
 
     setPorcentaje(count * 20);
-  }, [completeModule1, completeModule2]);
+  }, [completeModule1, completeModule2, completeModule3, completeModule4, completeModule5]);
 
   return (
     <AppContainer>
@@ -359,33 +428,33 @@ export const CurseAll = () => {
           </p>
           <br />
           <div className={style.etapa1__content}>
-            <div className={style.items__box}>
+          <div className={style.items__box}>
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isExperiencia"
+                onChange={onChangeCheack3}
+                value={module3.isExperiencia}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isBienvenido"
+                onChange={onChangeCheack3}
+                value={module3.isBienvenido}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isConoce"
+                onChange={onChangeCheack3}
+                value={module3.isConoce}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isEscucha"
+                onChange={onChangeCheack3}
+                value={module3.isEscucha}
                 reverseDirection
               />
             </div>
@@ -430,33 +499,33 @@ export const CurseAll = () => {
           </p>
           <br />
           <div className={style.etapa1__content}>
-            <div className={style.items__box}>
+          <div className={style.items__box}>
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isExperiencia"
+                onChange={onChangeCheack4}
+                value={module4.isExperiencia}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isBienvenido"
+                onChange={onChangeCheack4}
+                value={module4.isBienvenido}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isConoce"
+                onChange={onChangeCheack4}
+                value={module4.isConoce}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isEscucha"
+                onChange={onChangeCheack4}
+                value={module4.isEscucha}
                 reverseDirection
               />
             </div>
@@ -501,33 +570,33 @@ export const CurseAll = () => {
           </p>
           <br />
           <div className={style.etapa1__content}>
-            <div className={style.items__box}>
+          <div className={style.items__box}>
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isExperiencia"
+                onChange={onChangeCheack5}
+                value={module5.isExperiencia}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isBienvenido"
+                onChange={onChangeCheack5}
+                value={module5.isBienvenido}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isConoce"
+                onChange={onChangeCheack5}
+                value={module5.isConoce}
                 reverseDirection
               />
               <CheckBoxField
                 textLabel="Task 1"
-                name=""
-                onChange={() => {}}
-                value={false}
+                name="isEscucha"
+                onChange={onChangeCheack5}
+                value={module5.isEscucha}
                 reverseDirection
               />
             </div>

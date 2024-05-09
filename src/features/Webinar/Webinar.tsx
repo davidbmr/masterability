@@ -4,8 +4,8 @@ import { Card } from "@/components/Card/Card";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Button } from "primereact/button";
-import { useNavigate } from "react-router-dom";
+// import { Button } from "primereact/button";
+// import { useNavigate } from "react-router-dom";
 
 export const Webinar = () => {
   const responsive = {
@@ -27,7 +27,7 @@ export const Webinar = () => {
       items: 1,
     },
   };
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <AppContainer>
